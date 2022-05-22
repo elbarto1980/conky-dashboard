@@ -6,14 +6,13 @@ conky.config = {
   net_avg_samples=2,
 
   override_utf8_locale=true,
-
   double_buffer=true,
 
   -- Window specifications
-  own_window_class="Conky",
   own_window=true,
+  own_window_type='dock',
   own_window_transparent=true,
-  own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+  own_window_hints='undecorated,below,sticky,skip_taskbar,skip_pager',
   own_window_argb_visual=true,
 
   border_inner_margin=0,
@@ -24,7 +23,7 @@ conky.config = {
 
   maximum_width=750,
 
-  alignment="top_right",
+  alignment='top_right',
   gap_x=35,
   gap_y=35,
 
@@ -36,36 +35,37 @@ conky.config = {
 
   -- Text settings
   use_xft=true,
-  font="caviar dreams:size=14",
+  font='caviar dreams:size=14',
   xftalpha=0.9,
 
   default_color='FFFFFF',
 
   -- Lua Load
-  lua_load='~/.conky/conky_dashboard.lua',
+  lua_load='./conky_dashboard.lua',
   lua_draw_hook_pre='clock_rings'
 }
 
 conky.text = [[
-  ${voffset 8}${goto -45}${color FFFFFF}${font caviar dreams:size=16}${time %A}${font}
-  ${goto 200}${color FFFFFF}${font caviar dreams:size=38}${time %e} ${time %b}${font}
-  ${voffset 40}${font caviar dreams:size=64}${alignr}${time %H}:${time %M}${font}
+  ${voffset 8}${goto 300}${color FFFFFF}${font caviar dreams:size=18}${time %A}${font}\
+  ${voffset 20}${goto 550}${color FFFFFF}${font caviar dreams:size=38}${time %e} ${time %b}${font}
+  ${voffset 30}${color FFFFFF}${font caviar dreams:size=64}${alignr}${time %H}:${time %M}${font}
 
-  ${color FFFFFF}${goto 0}${voffset 65}${cpu cpu0}%
-  ${color FFFFFF}${goto 0}CPU
-  ${color FFFFFF}${goto 215}${voffset 45}${memperc}%
-  ${color FFFFFF}${goto 215}RAM
-  ${color FFFFFF}${goto 70}${voffset -38}${fs_used_perc /}%
-  ${color FFFFFF}${goto 70}SSD
-  ${color FFFFFF}${goto 90}${voffset 25}${if_up wlan0}${downspeed wlan0}${endif}
-  ${color FFFFFF}${goto 90}${if_up wlan0}${upspeed wlan0}${endif}
-  ${color FFFFFF}${goto 90}NET
+  ${color FFFFFF}${goto 310}${voffset 110}${cpu cpu0}%
+  ${color FFFFFF}${goto 300}CPU
+  ${color FFFFFF}${goto 510}${voffset 40}${memperc}%
+  ${color FFFFFF}${goto 500}RAM
+  ${color FFFFFF}${goto 350}${voffset -40}${fs_used_perc /home}%
+  ${color FFFFFF}${goto 330}HOME
+  ${color FFFFFF}${goto 400}${voffset 25}${if_up wlan0}${downspeed wlan0}${endif}
+  ${color FFFFFF}${goto 400}${if_up wlan0}${upspeed wlan0}${endif}
+  ${color FFFFFF}${goto 400}NET
+  ${color FFFFFF}${goto 460}${voffset 40}${nvidia gputemp}°C
+  ${color FFFFFF}${goto 470}GPU
 
+  ${color FFFFFF}${goto 300}${font caviar dreams:size=18}Uptime: ${uptime_short}
+  ${color FFFFFF}${goto 300}${font caviar dreams:size=18}Processes: ${processes}
+  ${color FFFFFF}${goto 300}${font caviar dreams:size=18}Running: ${running_processes}
 
-  ${color FFFFFF}${font caviar dreams:size=18}Uptime: ${uptime_short}
-  ${color FFFFFF}${font caviar dreams:size=18}Processes: ${processes}
-  ${color FFFFFF}${font caviar dreams:size=18}Running: ${running_processes}
-
-  ${color FFFFFF}${font caviar dreams:size=18}${alignr}${nodename}
+  ${color FFFFFF}${voffset -20}${font caviar dreams:size=18}${alignr}${nodename}
   #${color FFFFFF}${font caviar dreams:size=18}${alignr}${pre_exec cat /etc/issue.net}  $machine
 ]]
