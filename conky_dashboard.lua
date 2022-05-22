@@ -380,8 +380,8 @@ settings_table = {
     }, 
     {
         name='downspeedf',
-        arg='wlan0',
-        max=100,
+        arg='wlp0s20f3',
+        max=1000,
         bg_colour=0xFFFFFF,
         bg_alpha=0.5,
         fg_colour=0xFFFFFF,
@@ -394,8 +394,8 @@ settings_table = {
     },
         {
         name='upspeedf',
-        arg='wlan0',
-        max=100,
+        arg='wlp0s20f3',
+        max=1000,
         bg_colour=0xFFFFFF,
         bg_alpha=0.5,
         fg_colour=0xFFFFFF,
@@ -408,8 +408,8 @@ settings_table = {
     },
     {
         name='upspeedf',
-        arg='wlan0',
-        max=100,
+        arg='wlp0s20f3',
+        max=1000,
         bg_colour=0xFFFFFF,
         bg_alpha=0.5,
         fg_colour=0xFFFFFF,
