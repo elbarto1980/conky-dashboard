@@ -50,17 +50,17 @@ conky.text = [[
   ${voffset 20}${goto 550}${color FFFFFF}${font caviar dreams:size=38}${time %e} ${time %b}${font}
   ${voffset 30}${color FFFFFF}${font caviar dreams:size=64}${alignr}${time %H}:${time %M}${font}
 
-  ${color FFFFFF}${alignr 420}${voffset 110}${cpu cpu0}%
-  ${color FFFFFF}${alignr 420}CPU
-  ${color FFFFFF}${alignr 210}${voffset 40}${memperc}%
-  ${color FFFFFF}${alignr 210}RAM
-  ${color FFFFFF}${alignr 370}${voffset -40}${fs_used_perc /home}%
-  ${color FFFFFF}${alignr 370}HOME
-  ${color FFFFFF}${alignr 320}${voffset 40}${if_up wlp0s20f3}${downspeed wlp0s20f3}${endif}
-  ${color FFFFFF}${alignr 320}${if_up wlp0s20f3}${upspeed wlp0s20f3}${endif}
-  ${color FFFFFF}${alignr 320}NET
-  ${color FFFFFF}${alignr 240}${voffset 40}${nvidia gputemp}°C
-  ${color FFFFFF}${alignr 240}GPU
+  ${color FFFFFF}${alignr 430}${voffset 120}${cpu cpu0}%
+  ${color FFFFFF}${alignr 430}CPU
+  ${color FFFFFF}${alignr 190}${voffset 40}${memperc}%
+  ${color FFFFFF}${alignr 190}RAM
+  ${color FFFFFF}${alignr 380}${voffset -10}${fs_used_perc /home}%
+  ${color FFFFFF}${alignr 380}HOME
+  ${color FFFFFF}${alignr 340}${voffset 40}${nvidia gputemp}°C
+  ${color FFFFFF}${alignr 340}GPU
+  ${color FFFFFF}${alignr 290}${voffset 50}${if_up wlp0s20f3}${downspeed wlp0s20f3}${endif}
+  ${color FFFFFF}${alignr 290}${if_up wlp0s20f3}${upspeed wlp0s20f3}${endif}
+  ${color FFFFFF}${alignr 290}NET
 
   ${color FFFFFF}${goto 300}${font caviar dreams:size=18}Uptime: ${uptime_short}
   ${color FFFFFF}${goto 300}${font caviar dreams:size=18}Processes: ${processes}
