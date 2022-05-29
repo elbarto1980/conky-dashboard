@@ -126,8 +126,8 @@ settings_table = {
         end_angle=270
     },
     {
-        name='cpu',
-        arg='hwmon temp 1',
+        name='hwmon 1',
+        arg='temp 1',
         max=100,
         bg_colour=0xFFFFFF,
         bg_alpha=0.4,

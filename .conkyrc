@@ -50,7 +50,8 @@ conky.text = [[
   ${voffset 20}${goto 550}${color FFFFFF}${font caviar dreams:size=38}${time %e} ${time %b}${font}
   ${voffset 30}${color FFFFFF}${font caviar dreams:size=64}${alignr}${time %H}:${time %M}${font}
 
-  ${color FFFFFF}${alignr 430}${voffset 120}${cpu cpu0}%
+  ${color FFFFFF}${alignr 350}${voffset 70}${hwmon 1 temp 1}°C
+  ${color FFFFFF}${alignr 430}${voffset 20}${cpu cpu0}%
   ${color FFFFFF}${alignr 430}CPU
   ${color FFFFFF}${alignr 190}${voffset 40}${memperc}%
   ${color FFFFFF}${alignr 190}RAM
