@@ -16,6 +16,8 @@ settings_table = {
         fg_colour=0xFFFFFF,
         -- "fg_alpha" is the alpha value of the indicator part of the ring.
         fg_alpha=0.2,
+        -- "use_fg_colour" is set to true if you want the following colours to be used
+        use_fg_colour=true,
         -- "x" and "y" are the x and y coordinates of the centre of the ring, relative to the top left corner of the Conky window.
         x=430, y=150,
         -- "radius" is the radius of the ring.
@@ -35,6 +37,7 @@ settings_table = {
         bg_alpha=0.1,
         fg_colour=0xFFFFFF,
         fg_alpha=0.4,
+        use_fg_colour=true,
         x=430, y=150,
         radius=56,
         thickness=5,
@@ -49,6 +52,7 @@ settings_table = {
         bg_alpha=0.1,
         fg_colour=0xFFFFFF,
         fg_alpha=0.6,
+        use_fg_colour=true,
         x=430, y=150,
         radius=62,
         thickness=5,
@@ -63,6 +67,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
+        use_fg_colour=true,
         x=430, y=150,
         radius=70,
         thickness=5,
@@ -77,11 +82,12 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=1,
+        use_fg_colour=true,
         x=430, y=150,
         radius=76,
         thickness=5,
         start_angle=-90,
-        end_angle=150
+        end_angle=130
     },
 {
         name='time',
@@ -91,6 +97,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.0,
+        use_fg_colour=true,
         x=430, y=150,
         radius=95,
         thickness=20,
@@ -105,6 +112,7 @@ settings_table = {
         bg_alpha=0.6,
         fg_colour=0xFFFFFF,
         fg_alpha=0.0,
+        use_fg_colour=true,
         x=430, y=150,
         radius=89,
         thickness=10,
@@ -119,6 +127,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
+        use_fg_colour=false,
         x=380, y=310,
         radius=60,
         thickness=10,
@@ -133,6 +142,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
+        use_fg_colour=false,
         x=380, y=310,
         radius=72,
         thickness=5,
@@ -147,6 +157,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
+        use_fg_colour=false,
         x=380, y=310,
         radius=72,
         thickness=5,
@@ -161,39 +172,12 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
-        x=380, y=310,
-        radius=72,
-        thickness=5,
-        start_angle=95,
-        end_angle=140
-    },
-    {
-        name='cpu',
-        arg='cpu6',
-        max=100,
-        bg_colour=0xFFFFFF,
-        bg_alpha=0.4,
-        fg_colour=0xFFFFFF,
-        fg_alpha=0.8,
-        x=380, y=310,
-        radius=88,
-        thickness=5,
-        start_angle=95,
-        end_angle=140
-    },
-    {
-        name='cpu',
-        arg='cpu4',
-        max=100,
-        bg_colour=0xFFFFFF,
-        bg_alpha=0.4,
-        fg_colour=0xFFFFFF,
-        fg_alpha=0.8,
+        use_fg_colour=false,
         x=380, y=310,
         radius=80,
         thickness=5,
-        start_angle=95,
-        end_angle=140
+        start_angle=45,
+        end_angle=90
     },
     {
         name='cpu',
@@ -203,8 +187,24 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
+        use_fg_colour=false,
         x=380, y=310,
-        radius=80,
+        radius=88,
+        thickness=5,
+        start_angle=45,
+        end_angle=90
+    },
+    {
+        name='cpu',
+        arg='cpu4',
+        max=100,
+        bg_colour=0xFFFFFF,
+        bg_alpha=0.4,
+        fg_colour=0xFFFFFF,
+        fg_alpha=0.8,
+        use_fg_colour=false,
+        x=380, y=310,
+        radius=96,
         thickness=5,
         start_angle=45,
         end_angle=90
@@ -217,8 +217,24 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
+        use_fg_colour=false,
         x=380, y=310,
-        radius=88,
+        radius=104,
+        thickness=5,
+        start_angle=45,
+        end_angle=90
+    },
+    {
+        name='cpu',
+        arg='cpu6',
+        max=100,
+        bg_colour=0xFFFFFF,
+        bg_alpha=0.4,
+        fg_colour=0xFFFFFF,
+        fg_alpha=0.8,
+        use_fg_colour=false,
+        x=380, y=310,
+        radius=112,
         thickness=5,
         start_angle=45,
         end_angle=90
@@ -231,8 +247,9 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
+        use_fg_colour=false,
         x=380, y=310,
-        radius=96,
+        radius=120,
         thickness=5,
         start_angle=45,
         end_angle=90
@@ -245,8 +262,129 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
+        use_fg_colour=false,
+        x=380, y=310,
+        radius=128,
+        thickness=5,
+        start_angle=45,
+        end_angle=90
+    },
+    {
+        name='cpu',
+        arg='cpu9',
+        max=100,
+        bg_colour=0xFFFFFF,
+        bg_alpha=0.4,
+        fg_colour=0xFFFFFF,
+        fg_alpha=0.8,
+        use_fg_colour=false,
+        x=380, y=310,
+        radius=72,
+        thickness=5,
+        start_angle=95,
+        end_angle=140
+    },
+    {
+        name='cpu',
+        arg='cpu10',
+        max=100,
+        bg_colour=0xFFFFFF,
+        bg_alpha=0.4,
+        fg_colour=0xFFFFFF,
+        fg_alpha=0.8,
+        use_fg_colour=false,
+        x=380, y=310,
+        radius=80,
+        thickness=5,
+        start_angle=95,
+        end_angle=140
+    },
+    {
+        name='cpu',
+        arg='cpu11',
+        max=100,
+        bg_colour=0xFFFFFF,
+        bg_alpha=0.4,
+        fg_colour=0xFFFFFF,
+        fg_alpha=0.8,
+        use_fg_colour=false,
+        x=380, y=310,
+        radius=88,
+        thickness=5,
+        start_angle=95,
+        end_angle=140
+    },
+    {
+        name='cpu',
+        arg='cpu12',
+        max=100,
+        bg_colour=0xFFFFFF,
+        bg_alpha=0.4,
+        fg_colour=0xFFFFFF,
+        fg_alpha=0.8,
+        use_fg_colour=false,
         x=380, y=310,
         radius=96,
+        thickness=5,
+        start_angle=95,
+        end_angle=140
+    },
+    {
+        name='cpu',
+        arg='cpu13',
+        max=100,
+        bg_colour=0xFFFFFF,
+        bg_alpha=0.4,
+        fg_colour=0xFFFFFF,
+        fg_alpha=0.8,
+        use_fg_colour=false,
+        x=380, y=310,
+        radius=104,
+        thickness=5,
+        start_angle=95,
+        end_angle=140
+    },
+    {
+        name='cpu',
+        arg='cpu14',
+        max=100,
+        bg_colour=0xFFFFFF,
+        bg_alpha=0.4,
+        fg_colour=0xFFFFFF,
+        fg_alpha=0.8,
+        use_fg_colour=false,
+        x=380, y=310,
+        radius=112,
+        thickness=5,
+        start_angle=95,
+        end_angle=140
+    },
+    {
+        name='cpu',
+        arg='cpu15',
+        max=100,
+        bg_colour=0xFFFFFF,
+        bg_alpha=0.4,
+        fg_colour=0xFFFFFF,
+        fg_alpha=0.8,
+        use_fg_colour=false,
+        x=380, y=310,
+        radius=120,
+        thickness=5,
+        start_angle=95,
+        end_angle=140
+    },
+    {
+        name='cpu',
+        arg='cpu16',
+        max=100,
+        bg_colour=0xFFFFFF,
+        bg_alpha=0.4,
+        fg_colour=0xFFFFFF,
+        fg_alpha=0.8,
+        use_fg_colour=false,
+        x=380, y=310,
+        radius=128,
         thickness=5,
         start_angle=95,
         end_angle=140
@@ -260,6 +398,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
+        use_fg_colour=false,
         x=630, y=380,
         radius=80,
         thickness=10,
@@ -274,6 +413,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.0,
+        use_fg_colour=false,
         x=630, y=380,
         radius=63,
         thickness=24,
@@ -288,6 +428,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.4,
+        use_fg_colour=false,
         x=630, y=380,
         radius=105,
         thickness=25,
@@ -302,6 +443,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.2,
+        use_fg_colour=false,
         x=630, y=380,
         radius=130,
         thickness=13,
@@ -316,6 +458,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.2,
+        use_fg_colour=false,
         x=630, y=380,
         radius=100,
         thickness=10,
@@ -330,6 +473,7 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.2,
+        use_fg_colour=false,
         x=630, y=380,
         radius=100,
         thickness=10,
@@ -344,6 +488,7 @@ settings_table = {
         bg_alpha=0.3,
         fg_colour=0xFFFFFF,
         fg_alpha=0.0,
+        use_fg_colour=false,
         x=630, y=380,
         radius=115,
         thickness=8,
@@ -358,7 +503,8 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
-        x=410, y=445,
+        use_fg_colour=false,
+        x=390, y=460,
         radius=40,
         thickness=10,
         start_angle=-90,
@@ -372,7 +518,8 @@ settings_table = {
         bg_alpha=0.3,
         fg_colour=0xFFFFFF,
         fg_alpha=0.0,
-        x=410, y=445,
+        use_fg_colour=false,
+        x=390, y=460,
         radius=40,
         thickness=5,
         start_angle=180,
@@ -386,7 +533,8 @@ settings_table = {
         bg_alpha=0.6,
         fg_colour=0xFFFFFF,
         fg_alpha=0.0,
-        x=410, y=445,
+        use_fg_colour=false,
+        x=390, y=460,
         radius=50,
         thickness=5,
         start_angle=30,
@@ -400,7 +548,8 @@ settings_table = {
         bg_alpha=0.4,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
-        x=450, y=550,
+        use_fg_colour=false,
+        x=430, y=570,
         radius=30,
         thickness=10,
         start_angle=-90,
@@ -414,7 +563,8 @@ settings_table = {
         bg_alpha=0.3,
         fg_colour=0xFFFFFF,
         fg_alpha=0.0,
-        x=450, y=550,
+        use_fg_colour=false,
+        x=430, y=570,
         radius=30,
         thickness=5,
         start_angle=180,
@@ -428,7 +578,8 @@ settings_table = {
         bg_alpha=0.5,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
-        x=500, y=640,
+        use_fg_colour=false,
+        x=500, y=650,
         radius=38,
         thickness=10,
         start_angle=60,
@@ -442,7 +593,8 @@ settings_table = {
         bg_alpha=0.5,
         fg_colour=0xFFFFFF,
         fg_alpha=0.8,
-        x=500, y=640,
+        use_fg_colour=false,
+        x=500, y=650,
         radius=38,
         thickness=10,
         start_angle=-120,
@@ -456,7 +608,8 @@ settings_table = {
         bg_alpha=0.5,
         fg_colour=0xFFFFFF,
         fg_alpha=0.0,
-        x=500, y=640,
+        use_fg_colour=false,
+        x=500, y=650,
         radius=30,
         thickness=6,
         start_angle=0,
@@ -486,19 +639,28 @@ function draw_ring(cr,t,pt)
 
     local xc,yc,ring_r,ring_w,sa,ea=pt['x'],pt['y'],pt['radius'],pt['thickness'],pt['start_angle'],pt['end_angle']
     local bgc, bga, fgc, fga=pt['bg_colour'], pt['bg_alpha'], pt['fg_colour'], pt['fg_alpha']
+    local use_color=pt['use_fg_colour']
 
     local angle_0=sa*(2*math.pi/360)-math.pi/2
     local angle_f=ea*(2*math.pi/360)-math.pi/2
     local t_arc=t*(angle_f-angle_0)
 
     -- Draw background ring
-
     cairo_arc(cr,xc,yc,ring_r,angle_0,angle_f)
     cairo_set_source_rgba(cr,rgb_to_r_g_b(bgc,bga))
     cairo_set_line_width(cr,ring_w)
     cairo_stroke(cr)
 
     -- Draw indicator ring
+    if not use_color then
+      if t<0.5 then
+        fgc=0x00FF00
+      elseif t<0.75 then
+        fgc=0xFFFF00
+      else
+        fgc=0xFF0000
+      end
+    end
 
     cairo_arc(cr,xc,yc,ring_r,angle_0,angle_0+t_arc)
     cairo_set_source_rgba(cr,rgb_to_r_g_b(fgc,fga))
@@ -567,7 +729,6 @@ function conky_clock_rings()
     end
 
     -- Check that Conky has been running for at least 5s
-
     if conky_window==nil then return end
     local cs=cairo_xlib_surface_create(conky_window.display,conky_window.drawable,conky_window.visual, conky_window.width,conky_window.height)
 
