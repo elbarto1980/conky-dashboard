@@ -497,7 +497,7 @@ settings_table = {
     },
     {
         name='fs_used_perc',
-        arg='/',
+        arg='/home/emanuele',
         max=100,
         bg_colour=0xFFFFFF,
         bg_alpha=0.4,
@@ -512,7 +512,7 @@ settings_table = {
     },
     {
         name='fs_used_perc',
-        arg='/',
+        arg='/home/emanuele',
         max=100,
         bg_colour=0xFFFFFF,
         bg_alpha=0.3,
@@ -527,7 +527,7 @@ settings_table = {
     },
     {
         name='fs_used_perc',
-        arg='/',
+        arg='/home/emanuele',
         max=100,
         bg_colour=0xFFFFFF,
         bg_alpha=0.6,
